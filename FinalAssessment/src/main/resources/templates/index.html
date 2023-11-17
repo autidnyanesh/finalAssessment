@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+<body>
+
+    <h2>User Registration</h2>
+
+    <form id="userForm" action="/users/create" method="post" onsubmit="submitForm(event)">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
